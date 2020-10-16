@@ -11,7 +11,7 @@ const configureStore = (initialState: IAppState): Store<IAppState, any> => {
 
   return createStore(
     rootReducer,
-    initialState,
+    undefined,
     composeEnhancers(applyMiddleware(...middlewares))
   );
 };

@@ -1,5 +1,5 @@
 export interface IAppState {
-  turnData: ITurnDataState;
+  turndata: ITurnDataState;
 }
 
 export interface ITurnDataState {

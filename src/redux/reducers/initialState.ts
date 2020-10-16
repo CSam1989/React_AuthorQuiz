@@ -1,7 +1,7 @@
 import { IAppState } from "./../../interfaces/reducers.types";
 
 export const initialState: IAppState = {
-  turnData: {
+  turndata: {
     books: [],
     author: {
       name: "",

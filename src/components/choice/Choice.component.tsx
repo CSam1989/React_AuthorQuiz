@@ -1,18 +1,26 @@
 import React from "react";
+import { connect } from "react-redux";
+import { TurnDataActionTypes } from "../../interfaces/actions/turnData.types";
+import { setAnsweredChoice } from "../../redux/actions/turnData.actions";
 
 import "./Choice.styles.scss";
 
 export interface ChoiceProps {
   title: string;
+  setAnsweredChoice(choice: string): TurnDataActionTypes;
 }
 
-const Choice = (props: ChoiceProps) => {
-  const handleClick = () => console.log(props.title);
+const Choice = ({ title, setAnsweredChoice }: ChoiceProps) => {
+  const handleClick = () => setAnsweredChoice(title);
   return (
     <h4 className="choice" onClick={handleClick}>
-      {props.title}
+      {title}
     </h4>
   );
 };
 
-export default Choice;
+const mapDispatchToProps = {
+  setAnsweredChoice,
+};
+
+export default connect(null, mapDispatchToProps)(Choice);
