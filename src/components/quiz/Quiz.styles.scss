@@ -5,13 +5,20 @@
 
   display: grid;
   row-gap: 2vw;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr) 50px;
   grid-template-areas:
     "image"
-    "choices";
+    "choices"
+    "continue";
 
   .authorImage {
     grid-area: image;
+  }
+
+  .continue {
+    height: 100%;
+    width: 100%;
+    grid-area: continue;
   }
 }
 
@@ -21,7 +28,14 @@
     grid-template-rows: 1fr;
     gap: 0vh 2vh;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "image choices";
+    grid-template-rows: 1fr 50px;
+    grid-template-areas:
+      "image choices"
+      "continue continue";
+
+    .continue {
+      margin-top: 5px;
+    }
   }
 }
 
