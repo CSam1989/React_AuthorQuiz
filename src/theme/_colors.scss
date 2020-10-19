@@ -1,0 +1,15 @@
+$background-color: #fafafa;
+$header-color: #e9e9ec;
+$choice-color: #eff5fc;
+$choice-hover-color: #cfe0ef;
+$choice-border-color: #d5d9e2;
+$correct-color: #027f00;
+$fault-color: #fc0000;
+
+// export to js
+:export {
+  default: $background-color;
+  correct: $correct-color;
+  fault: $fault-color;
+  border: $choice-border-color;
+}

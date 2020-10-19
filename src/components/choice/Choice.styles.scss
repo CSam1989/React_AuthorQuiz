@@ -1,0 +1,15 @@
+@import "../../theme/colors";
+
+.choice {
+  background-color: $choice-color;
+  height: 50px;
+  margin: 1vh 0;
+  padding: 2vh 0 0 2vw;
+  font-weight: bold;
+  border-left: 5px solid $choice-border-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $choice-hover-color;
+  }
+}
