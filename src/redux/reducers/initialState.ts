@@ -6,7 +6,7 @@ export const initialState: IAppState = {
     author: {
       name: "",
       imageUrl: "",
-      books: [],
+      books: [""],
     },
     highlight: "",
   },
